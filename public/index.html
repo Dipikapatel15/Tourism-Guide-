@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Grenze+Gotisch:wght@500&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Charm:wght@700&family=Grenze+Gotisch:wght@500&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="slide" id="slideleft">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="left">
+            <h2>Teiara.com</h2>
+        </div>
+        <div class="mid">
+            <ul>
+                <li class="phone">
+                    <a href="#">Home</a>
+                    <a href="Maps/index.html">Maps</a>
+                    <div class="dropdown">
+                        <a href="Maps/index.html">Destinations</a>
+                        <div class="dropdown-content">
+                            <a href="Gallery/north.html">North India</a>
+                            <a href="Gallery/north.html">South India</a>
+                            <a href="Gallery/north.html">East India</a>
+                            <a href="Gallery/north.html">West India</a>
+                        </div>
+                    </div>
+                    <a href="Reviews/index.html">Reviews</a>
+                    <a href="Contact/index.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <form>
+                <input type="text" name="" placeholder="Search places..." class="input">
+                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <div class="right">
+            <button><a href="Login/index.html"><i class="fa fa-user"></i></a></button>
+        </div>
+    </nav>
+
+    <section class="bdo">
+        <h1>Travel across the World</h1>
+        <p>You landed on the amazing Website.</p>
+    </section>
+
+    <!-- Chatbox structure -->
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="./images/chatbox-icon.svg" /></button>
+        </div>
+    </div>
+
+    <script>
+        const slideicon = document.querySelector(".fa-bars");
+        const phone = document.querySelector(".phone");
+        const bdo = document.querySelector(".bdo");
+        slideicon.onclick = () => {
+            phone.classList.add("active");
+        }
+        bdo.onclick = () => {
+            phone.classList.remove("active");
+        }
+    </script>
+    <script src="chatbox.js"></script>
+    <script>
+        var $SCRIPT_ROOT = "{{ request.script_root }}";
+    </script>
+</body>
+</html>

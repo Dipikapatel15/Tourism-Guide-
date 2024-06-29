@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="featureButton">FEATURE</button>
+    <div class="container" id="formContainer" style="display: none;">
+        <form action="/sign_up" method="post" id="touristForm">
+            <h1>Tourist Information Form</h1>
+            <div class="form-group">
+                <label for="headName">Head Name:</label>
+                <input type="text" id="headName" name="headName" required>
+            </div>
+            <div class="form-group">
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="children">Number of Children:</label>
+                <input type="number" id="children" name="children" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget (in USD):</label>
+                <input type="number" id="budget" name="budget" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="travelDates">Travel Dates:</label>
+                <input type="date" id="travelStart" name="travelStart" required>
+                <input type="date" id="travelEnd" name="travelEnd" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <h1>National Tourism</h1>
+    <div id="placesContainer" class="places">
+        <div class="box">
+            <div class="face">
+                <img src="img/tajmahal.jpg" alt="Taj Mahal">
+                <h2>Taj Mahal</h2>
+                <button class="btn">
+                    <a href="tajmahal.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/goa.jpg" alt="Goa">
+                <h2>Goa</h2>
+                <button class="btn">
+                    <a href="goa.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/amritsar.jpg" alt="Golden Temple">
+                <h2>Golden Temple</h2>
+                <button class="btn">
+                    <a href="amritsar.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="face">
+                <img src="img/ajantacaves.jpg" alt="Ajanta Caves">
+                <h2>Ajanta Caves</h2>
+                <button class="btn">
+                    <a href="ajanta.html">Visit Now</a>
+                </button>
+            </div>
+        </div>
+       
+    </div>
+  
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

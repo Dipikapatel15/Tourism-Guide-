@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+section {
+    margin: 2em;
+    padding: 1em;
+    background: #fff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #333;
+}
+
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#video-container iframe {
+    flex: 1 1 300px;
+    height: 200px;
+}
+
+#restaurant-list {
+    list-style: none;
+    padding: 0;
+}
+
+#restaurant-list li {
+    background: #e2e2e2;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+#weather-info {
+    font-size: 1.2em;
+}
